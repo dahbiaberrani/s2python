@@ -54,36 +54,6 @@ class Pile:
     def afficher(self):
         print(self)
 
-mapile1 = Pile(5)
-
-print(mapile1)
-mapile1.empiler(10)
-print(mapile1)
-mapile1.empiler(20)
-print(mapile1)
-
-mapile1.empiler(11)
-print(mapile1)
-mapile1.empiler(0)
-print(mapile1)
-mapile1.empiler(19)
-print(mapile1)
-mapile1.empiler(18)
-print(mapile1)
-mapile1.empiler(15)
-mapile1.afficher()
-
-print("voila le sommet",mapile1.sommet())
-
-mapile1.depiler()
-print(mapile1)
-mapile1.purger()
-print(mapile1)
-print("voila le sommet",mapile1.sommet())
-mapile1.purger()
-print(mapile1)
-mapile1.depiler()
-mapile1.afficher()
 
 
 
