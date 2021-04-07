@@ -38,10 +38,10 @@ def NPI(calcul):
     cal = calcul.split()
     
     for i in range(len(cal)):
-        if not estOperation(cal[i]):
+         if not estOperation(cal[i]):
             mapile.empiler(cal[i])   
-            mapile.afficher()     
-        else :
+            mapile.afficher()    
+         else :
             operande2 = mapile.sommet() 
             mapile.afficher()
             operande1 = mapile.sommet()
