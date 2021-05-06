@@ -1,5 +1,4 @@
 
-#definir une fonction qui vérifier les bonne parenthèse avec Récursive
 
 
 list = []
