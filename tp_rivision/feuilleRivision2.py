@@ -45,11 +45,38 @@ def copiePile(pile):
     pile1 = creerPile()
 
 
+
+
 def maccarthy(n):
     if n>100:
         return n-10
     else:
         return maccarthy(maccarthy(n+11))
+
+
+def estTrie(tab):
+    if len(tab)<=1:
+        return True
+    else:
+        return tab[0] <= tab[1] and estTrie(tab[1:])
+
+
+def estTrieVession2(tab):
+
+    if len(tab)<=1:
+        return True
+    elif tab[0] > tab[1]:
+        return False
+
+    else:
+        return estTrie(tab[1:])
+
+
+
+
+
+
+
 
 liste1 = [2,3,5,8,14]
 print(maxRecursive(liste1))
@@ -63,3 +90,11 @@ depiler(pile1)
 print(pile1)
 
 print(maccarthy(20))
+
+liste1 = [2,3,5,8,14]
+liste2 = [8,3,5,8,14]
+print(estTrie(liste1))
+print(estTrie(liste2))
+
+print(estTrieVession2(liste1))
+print(estTrieVession2(liste2))
