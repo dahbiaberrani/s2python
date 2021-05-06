@@ -1,3 +1,6 @@
+
+# recherche max d'un liste
+
 def maxRecursive(liste):
     if len(liste) ==0:
         return None
@@ -12,7 +15,7 @@ def maxRecursive(liste):
 
 
 
-#exercice 2
+#exercice 2 divsion euclidienne
 def eucli(a,b):
     if a < b:
         return a
@@ -21,7 +24,8 @@ def eucli(a,b):
 
 
 
-#exercie 3
+#exercie 
+# creation d'un pile 
 def creerPile():
     return []
 
@@ -53,14 +57,14 @@ def maccarthy(n):
     else:
         return maccarthy(maccarthy(n+11))
 
-
+# regarde si la liste est trie version 1
 def estTrie(tab):
     if len(tab)<=1:
         return True
     else:
         return tab[0] <= tab[1] and estTrie(tab[1:])
 
-
+# regarde si la liste est trie version 2
 def estTrieVession2(tab):
 
     if len(tab)<=1:
@@ -89,7 +93,7 @@ empiler(pile1,40)
 depiler(pile1)
 print(pile1)
 
-print(maccarthy(20))
+print(maccarthy(91))
 
 liste1 = [2,3,5,8,14]
 liste2 = [8,3,5,8,14]
